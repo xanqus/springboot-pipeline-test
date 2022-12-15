@@ -20,7 +20,7 @@ pipeline {
         stage('Build Docker Image by Jib') {
             steps {
                 sh """
-                ./gradlew jib -Djib.to.image=my-springboot-app:latest -Djib.console='plain'
+                docker build -t docker-example:latest .
                 """
             }
         }
