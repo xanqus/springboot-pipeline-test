@@ -17,7 +17,7 @@ pipeline {
                 """
             }
         }
-        stage('Build Docker Image by Jib') {
+        stage('Build Docker') {
             steps {
                 sh """
                 docker build -t my-springboot-app:latest .
