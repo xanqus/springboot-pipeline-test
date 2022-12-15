@@ -20,7 +20,7 @@ pipeline {
         stage('Build Docker Image by Jib') {
             steps {
                 sh """
-                docker build -t docker-example:latest .
+                docker build -t my-springboot-app:latest .
                 """
             }
         }
